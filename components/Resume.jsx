@@ -4,12 +4,13 @@ import React from 'react';
 
 const Resume = () => {
     const experiences = [
+
         {
             type: 'Formation',
             title: 'Diplôme Technicien ES en Développement Applications',
             company: 'Centre Professionnel du Nord Vaudois (CPNV)',
             period: '2022 - 2024 (2 ans)',
-            description: '(2 ans)',
+            description: "Formation diplômante en développement d'applications web et mobile au Centre Professionnel du Nord Vaudois.",
         },
         {
             type: 'Formation',
@@ -23,7 +24,25 @@ const Resume = () => {
             title: 'CFC Informaticien de Gestion',
             company: 'Centre Professionnel du Nord Vaudois (CPNV)',
             period: '2011 - 2016 (5 ans)',
-            description: '(5 ans)',
+            description: 'Formation en informatique de gestion avec spécialisation en développement d’applications.',
+        },
+        {
+            type: 'Expérience',
+            title: 'Développeur Web (Freelance)',
+            company: 'One-Conseils, 1400 Yverdon-les-Bains',
+            period: '08.2024 – 10.2024 (3 mois)',
+            description: 'Développement d’un système de streaming vidéo en RTMP avec Adonisjs.',
+            projects: [
+                {
+                    title: 'Développeur Web (Travail de Diplôme)',
+                    description: 'Développement d’un système de streaming vidéo en RTMP avec Adonisjs.',
+                    hours: '80 heures supervisées',
+                    skills: [
+                        'Développer une API RESTful avec AdonisJS',
+                        'Développer un système de streaming vidéo en RTMP',
+                    ],
+                },
+            ],
         },
         {
             type: 'Expérience',
@@ -164,7 +183,7 @@ const Resume = () => {
                     }).map((item, index) => (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-md">
                             <div className="flex items-start space-x-4">
-                                <div className="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">
+                                <div className={`${item.type === 'Formation' ? 'bg-red-300' : 'bg-teal-500'} text-white rounded-full w-12 h-8 flex items-center justify-center font-bold`}>
                                     {item.type === 'Formation' ? 'FOR' : 'EXP'}
                                 </div>
                                 <div>

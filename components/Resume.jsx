@@ -9,21 +9,21 @@ const Resume = () => {
             title: 'Diplôme Technicien ES en Développement Applications',
             company: 'Centre Professionnel du Nord Vaudois (CPNV)',
             period: '06.2022 - 07.2024 (2 ans)',
-            description: "Formation diplômante en développement d'applications web et mobile au Centre Professionnel du Nord Vaudois.",
+            description: "École supérieure diplômante en développement d'applications web et mobile au Centre Professionnel du Nord Vaudois.",
         },
         {
             type: 'Formation',
             title: 'Certificat ITILV3 Foundation',
             company: 'Altran Éducation Services',
             period: '2016 (5 jours)',
-            description: '(5 jours)',
+            description: 'Formation sur 5 jours pour obtenir le certificat ITILV3 Foundation contentant les bases de la gestion des services IT.',
         },
         {
             type: 'Formation',
-            title: 'CFC Informaticien de Gestion',
+            title: 'CFC Informaticien Généraliste',
             company: 'Centre Professionnel du Nord Vaudois (CPNV)',
             period: '2011 - 2016 (5 ans)',
-            description: 'Formation en informatique de gestion avec spécialisation en développement d’applications.',
+            description: 'Formation en informatique généraliste avec un CFC obtenu en 2016 au Centre Professionnel du Nord Vaudois.',
         },
         {
             type: 'Expérience',
@@ -35,7 +35,6 @@ const Resume = () => {
                 {
                     title: 'Développeur Web (Travail de Diplôme)',
                     description: 'Développement d’un système de streaming vidéo en RTMP avec Adonisjs.',
-                    hours: '80 heures supervisées',
                     skills: [
                         'Développer une API RESTful avec AdonisJS',
                         'Développer un système de streaming vidéo en RTMP',
@@ -53,7 +52,6 @@ const Resume = () => {
                 {
                     title: 'Développeur Web (Travail de Diplôme)',
                     description: 'Développement d’un système de streaming vidéo en RTMP avec Adonisjs.',
-                    hours: '80 heures supervisées',
                     skills: [
                         'Développer une API RESTful avec AdonisJS',
                         'Développer un système de streaming vidéo en RTMP',
@@ -182,8 +180,8 @@ const Resume = () => {
                     }).map((item, index) => (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-md">
                             <div className="flex items-start space-x-4">
-                                <div className={`${item.type === 'Formation' ? 'bg-red-300' : 'bg-teal-500'} text-white rounded-full w-12 h-8 flex items-center justify-center font-bold`}>
-                                    {item.type === 'Formation' ? 'FOR' : 'EXP'}
+                                <div className={`${item.type === 'Formation' ? 'bg-red-300' : 'bg-teal-500'} text-white rounded-full w-28 h-8 flex items-center justify-center font-bold`}>
+                                    {item.type === 'Formation' ? 'FORMATION' : 'EXPERIENCE'}
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-semibold text-gray-800 mb-2">{item.title}</h3>

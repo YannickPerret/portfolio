@@ -61,8 +61,7 @@ const Navbar = () => {
                 <div
                     className={`text-2xl font-bold transition-all duration-500 font-[family-name:var(--font-monsier-regular)]  ${
                         isScrolled ? 'text-blue-600' : 'text-white'
-                    }`}
-                >
+                    }`}>
                     Yannick Perret
                 </div>
                 {isMobile ? (
@@ -73,7 +72,7 @@ const Navbar = () => {
                     </button>
                 ) : (
                     <ul className="flex space-x-6">
-                        {['Accueil', 'À Propos', 'Projets', 'Compétences', 'Contact'].map((item, index) => (
+                        {['Accueil', 'A Propos', 'Projets', 'Compétences', 'Contact'].map((item, index) => (
                             <li key={index}>
                                 <Link
                                     href={`#${item.toLowerCase().replace(' ', '')}`}

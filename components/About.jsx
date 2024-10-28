@@ -6,7 +6,7 @@ import yannick from '../public/images/PerretYannick.jpeg';
 
 const About = () => {
     return (
-        <section id="àpropos" className="py-20 bg-gray-100">
+        <section id="apropos" className="py-20 bg-gray-100">
             <div className="container mx-auto px-6 py-16 relative">
                 <div className="glow-wrapper">
                     <div className="content-box relative p-8 rounded-lg bg-gray-200">

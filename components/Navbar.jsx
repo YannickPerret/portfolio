@@ -29,8 +29,8 @@ const Navbar = () => {
             }`}
         >
             <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-                <div className={`text-2xl font-bold transition-all duration-500 ${isScrolled ? 'text-blue-600' : 'text-white'}`}>
-                    Perret Yannick
+                <div className={`text-2xl font-bold transition-all duration-500 font-[family-name:var(--font-monsier-regular)]  ${isScrolled ? 'text-blue-600' : 'text-white'}`}>
+                    Yannick Perret
                 </div>
                 <ul className="flex space-x-6">
                     {['Accueil', 'À Propos', 'Projets', 'Compétences', 'Contact'].map((item, index) => (
@@ -39,8 +39,7 @@ const Navbar = () => {
                                 href={`#${item.toLowerCase().replace(' ', '')}`}
                                 className={`transition-all duration-500 ${
                                     isScrolled ? 'text-gray-700 hover:text-blue-500' : 'text-gray-200 hover:text-blue-300'
-                                }`}
-                            >
+                                }`}>
                                 {item}
                             </Link>
                         </li>

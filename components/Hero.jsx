@@ -7,7 +7,7 @@ const Hero = () => {
     const [showButton, setShowButton] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
 
-    const title = 'Bonjour, je suis Perret Yannick';
+    const title = 'Bonjour, je suis Yannick Perret';
     const letters = title.split('');
 
     useEffect(() => {
@@ -38,17 +38,16 @@ const Hero = () => {
     return (
         <section id="accueil" className="relative h-screen">
             {!isMobile && (
-                <video
-                    className="absolute top-0 left-0 w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    poster="/images/hero-bg.jpg"
-                >
-                    <source src="hero_video.mp4" type="video/mp4" />
-                    Votre navigateur ne supporte pas les vidéos HTML5.
-                </video>
+                    <video
+                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        poster="/images/hero-bg.jpg">
+                        <source src="/videos/hero_video.mp4" type="video/mp4" />
+                        Votre navigateur ne supporte pas les vidéos HTML5.
+                    </video>
             )}
 
             {isMobile && (

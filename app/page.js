@@ -19,7 +19,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar />
-        <main>
+        <main className={`font-[family-name:var(--font-robot-slab-regular]`}>
           <Hero />
           <About />
           <Resume />

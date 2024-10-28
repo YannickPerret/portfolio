@@ -68,8 +68,8 @@ const Skills = () => {
                 <div className="text-gray-600 mb-12">
                     <ul className={`list-inside text-gray-700 italic text-sm`}>
                         <li>Débutant : Déjà utilisé et peut faire fonctionné un système simple</li>
-                        <li>Intermédiaire : L'utilise régulièrement et peut trouver rapidement des informations à son sujets</li>
-                        <li>Avancé : L'utilise quotidiennement depuis plusieurs année et connait très bien </li>
+                        <li>Intermédiaire : L&apos;utilise régulièrement et peut trouver rapidement des informations à son sujets</li>
+                        <li>Avancé : L&apos;utilise quotidiennement depuis plusieurs année et connait très bien </li>
                     </ul>
                 </div>
                 {Object.entries(skillsByCategory).map(([category, skills], index) => (

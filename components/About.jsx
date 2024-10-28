@@ -26,7 +26,7 @@ const About = () => {
                             <div className="w-full md:w-2/3">
                                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
                                     Bonjour ! Je m&apos;appelle&nbsp;
-                                    <span className="font-semibold">Yannick Perret</span>, un développeur web full-stack passionné avec plusieurs années d&apos;expérience dans la création d'applications web modernes et réactives. J'adore explorer de nouvelles technologies et améliorer continuellement mes compétences pour offrir les meilleures solutions à mes clients.
+                                    <span className="font-semibold">Yannick Perret</span>, un développeur web full-stack passionné avec plusieurs années d&apos;expérience dans la création d&apos;applications web modernes et réactives. J&apos;adore explorer de nouvelles technologies et améliorer continuellement mes compétences pour offrir les meilleures solutions à mes clients.
                                 </p>
 
                                 <div className="flex flex-col md:flex-row md:space-x-8">

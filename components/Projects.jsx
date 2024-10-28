@@ -15,12 +15,24 @@ const Projects = () => {
             image: '/images/project2.jpg',
             link: '#',
         },
+        {
+            title: 'Projet 3',
+            description: 'Description du projet 2.',
+            image: '/images/project2.jpg',
+            link: '#',
+        },
+        {
+            title: 'Projet 4',
+            description: 'Description du projet 2.',
+            image: '/images/project2.jpg',
+            link: '#',
+        },
     ];
 
     return (
         <section id="projets" className="py-20">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Mes Projets</h2>
+                <h2 className="text-4xl font-bold text-center text-sky-700 mb-12">Mes Projets</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     {projects.map((project, index) => (
                         <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">

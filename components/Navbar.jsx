@@ -72,7 +72,7 @@ const Navbar = () => {
                     </button>
                 ) : (
                     <ul className="flex space-x-6">
-                        {['Accueil', 'A Propos', 'Projets', 'Compétences', 'Contact'].map((item, index) => (
+                        {['Accueil', 'A Propos', 'Mon Parcours', 'Projets', 'Competences', 'Contact'].map((item, index) => (
                             <li key={index}>
                                 <Link
                                     href={`#${item.toLowerCase().replace(' ', '')}`}
@@ -93,7 +93,7 @@ const Navbar = () => {
             {isMobile && isMenuOpen && (
                 <div className="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-40 transition-transform transform translate-x-0">
                     <ul className="flex flex-col p-6 space-y-6 mt-16">
-                        {['Accueil', 'À Propos', 'Projets', 'Compétences', 'Contact'].map((item, index) => (
+                        {['Accueil', 'A Propos', 'Mon Parcours', 'Projets', 'Competences', 'Contact'].map((item, index) => (
                             <li key={index}>
                                 <Link
                                     href={`#${item.toLowerCase().replace(' ', '')}`}

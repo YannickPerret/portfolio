@@ -164,7 +164,7 @@ const Resume = () => {
     ];
 
     return (
-        <section id="resume" className="py-20 bg-gray-100">
+        <section id="monparcours" className="py-20 bg-gray-100">
             <div className="container mx-auto px-6">
                 <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Mon Parcours</h2>
                 <div className="space-y-12">

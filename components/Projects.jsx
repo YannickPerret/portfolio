@@ -11,38 +11,38 @@ const Projects = () => {
     const projects = [
         {
             title: 'Arcana Stream',
-            description: 'Une application permettant de gérer les tâches quotidiennes avec une interface intuitive.',
+            description: 'Un Saas permettant de diffuser des vidéos en direct.',
             image: arcanastream,
-            link: 'https://example.com/projet1',
-            languages: ['React', 'Node.js', 'Tailwind CSS'],
+            link: 'https://arcanastream.io',
+            languages: ['Next.js', 'Tailwind CSS', 'AdonisJS', 'Redis', 'MySQL', 'FFmpeg', 'Gstreamer', 'SSE', 'CronJob', 'Stripe'],
         },
         {
             title: 'Coworking',
-            description: 'Un site e-commerce moderne avec intégration de paiement.',
+            description: 'Une extension de système à One-Conseils pour gérer leurs espaces de coworking, notamment les réservations.',
             image: coworking,
-            link: 'https://example.com/projet2',
-            languages: ['Next.js', 'Stripe', 'MongoDB'],
+            link: 'https://coworking.oneconseils.ch',
+            languages: ['Next.js', 'Tailwind CSS', 'AdonisJS', 'MySQL'],
         },
         {
             title: 'One Conseils',
-            description: 'Un tableau de bord analytique pour suivre les performances en temps réel.',
+            description: 'Un site vitrine pour l\'entreprise One Conseils.',
             image: oneconseils,
-            link: 'https://example.com/projet3',
-            languages: ['Vue.js', 'Firebase', 'Sass'],
+            link: 'https://oneconseils.ch',
+            languages: ['Next.js', 'Tailwind CSS', 'AdonisJS', 'MySQL'],
         },
         {
             title: 'InvisibleCom',
-            description: 'Une application de chat en temps réel avec notifications.',
+            description: 'Un site vitrine pour une entreprise dans le domaine de la communication et du marketing, malheureusement l\'entreprise a fermé.',
             image: invisiblecom,
-            link: 'https://example.com/projet4',
-            languages: ['Angular', 'Socket.io', 'Express'],
+            link: null,
+            languages: ['HTML5', 'CSS3', 'JavaScript'],
         },
         {
             title: 'Sekoya',
-            description: 'Une plateforme pour les espaces de coworking.',
+            description: 'Un site e-commerce pour une entreprise dans le domaine de la santé, vente de compléments alimentaires naturels.',
             image: sekoya,
-            link: 'https://example.com/projet5',
-            languages: ['React', 'Firebase', 'Material UI'],
+            link: 'https://sekoya.swiss',
+            languages: ['Shopify', 'Liquid', 'JavaScript', 'HTML5', 'CSS3'],
         },
     ];
 
@@ -50,7 +50,7 @@ const Projects = () => {
         <section id="projets" className="py-20 bg-gray-100">
             <div className="container mx-auto px-6">
                 <h2 className="text-4xl font-bold text-center text-sky-700 mb-12">Mes Projets</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 auto-rows-fr">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
                     {projects.map((project, index) => (
                         <div
                             key={index}
@@ -62,28 +62,38 @@ const Projects = () => {
                                 alt={project.title}
                                 width={600}
                                 height={400}
-                                className={`w-full ${index === 0 ? 'h-[50rem]' : 'h-96'} object-top object-cover transition-transform duration-300 ease-in-out group-hover:scale-110`}
+                                className={`w-full sm:h-[35rem] ${index === 0 ? 'md:h-[50rem]' : 'md:h-96'} object-top object-cover transition-transform duration-300 ease-in-out group-hover:scale-110`}
                             />
 
                             <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-between">
-                                <div>
-                                    <h3 className="text-2xl font-bold text-white mb-4">{project.title}</h3>
-                                    <p className="text-white text-sm mb-4">{project.description}</p>
-                                </div>
-                                <div className="flex flex-wrap gap-2 mb-4">
-                                    {project.languages.map((language, idx) => (
-                                        <span key={idx} className="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-sm">
+                                <div className={`flex flex-col justify-between h-auto`}>
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-white mb-4">{project.title}</h3>
+                                        <p className="text-white text-sm mb-4">{project.description}</p>
+                                    </div>
+                                    <div className="flex flex-wrap gap-2 mb-4">
+                                        {project.languages.map((language, idx) => (
+                                            <span key={idx}
+                                                  className="bg-teal-800 text-white px-3 py-1 rounded-full text-sm">
                                             {language}
                                         </span>
-                                    ))}
+                                        ))}
+                                    </div>
+
                                 </div>
 
-                                <Link
-                                    href={project.link}
-                                    className="inline-block bg-sky-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-sky-400 transition-all duration-300"
-                                >
-                                    Voir le projet &rarr;
-                                </Link>
+                                {project.link ? (
+                                    <Link
+                                        href={project.link}
+                                        className="inline-block bg-sky-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-sky-400 transition-all duration-300"
+                                    >
+                                        Voir le projet &rarr;
+                                    </Link>
+                                ): (
+                                    <span className="bg-gray-500 text-white px-4 py-2 rounded-full font-semibold cursor-not-allowed">
+                                        Non disponible
+                                    </span>
+                                )}
                             </div>
                         </div>
                     ))}

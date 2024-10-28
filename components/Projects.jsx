@@ -10,35 +10,35 @@ import sekoya from "@public/images/projects/sekoya.png";
 const Projects = () => {
     const projects = [
         {
-            title: 'Projet 1',
+            title: 'Arcana Stream',
             description: 'Une application permettant de gérer les tâches quotidiennes avec une interface intuitive.',
             image: arcanastream,
             link: 'https://example.com/projet1',
             languages: ['React', 'Node.js', 'Tailwind CSS'],
         },
         {
-            title: 'Projet 2',
+            title: 'Coworking',
             description: 'Un site e-commerce moderne avec intégration de paiement.',
             image: coworking,
             link: 'https://example.com/projet2',
             languages: ['Next.js', 'Stripe', 'MongoDB'],
         },
         {
-            title: 'Projet 3',
+            title: 'One Conseils',
             description: 'Un tableau de bord analytique pour suivre les performances en temps réel.',
             image: oneconseils,
             link: 'https://example.com/projet3',
             languages: ['Vue.js', 'Firebase', 'Sass'],
         },
         {
-            title: 'Projet 4',
+            title: 'InvisibleCom',
             description: 'Une application de chat en temps réel avec notifications.',
             image: invisiblecom,
             link: 'https://example.com/projet4',
             languages: ['Angular', 'Socket.io', 'Express'],
         },
         {
-            title: 'Projet 5',
+            title: 'Sekoya',
             description: 'Une plateforme pour les espaces de coworking.',
             image: sekoya,
             link: 'https://example.com/projet5',

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { useState } from 'react';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import Link from "next/link";
@@ -31,10 +31,10 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-20">
+        <section id="contact" className="py-20 bg-gray-900">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Contactez-moi</h2>
-                <div className="max-w-3xl mx-auto">
+                <h2 className="text-4xl font-bold text-center text-sky-600 mb-12">Contactez-moi</h2>
+                <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-xl p-8">
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
                             <label className="block text-gray-700 font-semibold">Nom</label>
@@ -42,7 +42,7 @@ const Contact = () => {
                                 type="text"
                                 name="name"
                                 required
-                                className="w-full border border-gray-300 rounded-lg px-4 py-2 mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full border border-gray-300 rounded-lg px-4 py-3 mt-2 focus:outline-none focus:ring-2 focus:ring-sky-500 bg-gray-50 text-gray-700"
                             />
                         </div>
                         <div>
@@ -51,7 +51,7 @@ const Contact = () => {
                                 type="email"
                                 name="email"
                                 required
-                                className="w-full border border-gray-300 rounded-lg px-4 py-2 mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full border border-gray-300 rounded-lg px-4 py-3 mt-2 focus:outline-none focus:ring-2 focus:ring-sky-500 bg-gray-50 text-gray-700"
                             />
                         </div>
                         <div>
@@ -59,12 +59,12 @@ const Contact = () => {
                             <textarea
                                 name="message"
                                 required
-                                className="w-full border border-gray-300 rounded-lg px-4 py-2 mt-2 h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full border border-gray-300 rounded-lg px-4 py-3 mt-2 h-32 focus:outline-none focus:ring-2 focus:ring-sky-500 bg-gray-50 text-gray-700"
                             ></textarea>
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                            className="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
                         >
                             Envoyer
                         </button>
@@ -72,28 +72,20 @@ const Contact = () => {
                     {status && <p className="mt-6 text-center text-green-500">{status}</p>}
                     <div className="flex justify-center space-x-8 mt-12">
                         <Link
-                            href="https://www.linkedin.com/in/votreprofil"
+                            href="https://www.linkedin.com/in/perretyannick"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-700 hover:text-blue-500 text-3xl"
+                            className="text-gray-700 hover:text-sky-600 text-3xl transition-all duration-300"
                         >
                             <FaLinkedin />
                         </Link>
                         <Link
-                            href="https://github.com/votreprofil"
+                            href="https://github.com/yannickperret"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-700 hover:text-black text-3xl"
+                            className="text-gray-700 hover:text-black text-3xl transition-all duration-300"
                         >
                             <FaGithub />
-                        </Link>
-                        <Link
-                            href="https://twitter.com/votreprofil"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-700 hover:text-blue-400 text-3xl"
-                        >
-                            <FaTwitter />
                         </Link>
                     </div>
                 </div>

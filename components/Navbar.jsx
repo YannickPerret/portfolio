@@ -8,8 +8,8 @@ const Navbar = () => {
                 <ul className="flex space-x-6">
                     {['Accueil', 'À Propos', 'Projets', 'Compétences', 'Contact'].map((item, index) => (
                         <li key={index}>
-                            <Link href={`#${item.toLowerCase().replace(' ', '')}`}>
-                                <a className="text-gray-600 hover:text-blue-500">{item}</a>
+                            <Link href={`#${item.toLowerCase().replace(' ', '')}`} className="text-gray-600 hover:text-blue-500">
+                              {item}
                             </Link>
                         </li>
                     ))}

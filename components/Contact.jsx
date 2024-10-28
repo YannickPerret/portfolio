@@ -1,5 +1,7 @@
+'use client'
 import { useState } from 'react';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import Link from "next/link";
 
 const Contact = () => {
     const [status, setStatus] = useState('');
@@ -69,31 +71,30 @@ const Contact = () => {
                     </form>
                     {status && <p className="mt-6 text-center text-green-500">{status}</p>}
                     <div className="flex justify-center space-x-8 mt-12">
-                        <a
+                        <Link
                             href="https://www.linkedin.com/in/votreprofil"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-700 hover:text-blue-500 text-3xl"
                         >
                             <FaLinkedin />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://github.com/votreprofil"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-700 hover:text-black text-3xl"
                         >
                             <FaGithub />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://twitter.com/votreprofil"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-700 hover:text-blue-400 text-3xl"
                         >
                             <FaTwitter />
-                        </a>
-                        {/* Ajoutez d'autres icônes de réseaux sociaux */}
+                        </Link>
                     </div>
                 </div>
             </div>

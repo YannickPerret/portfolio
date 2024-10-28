@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 const Projects = () => {
     const projects = [
@@ -33,12 +34,12 @@ const Projects = () => {
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                                 <p className="text-gray-700 mb-4">{project.description}</p>
-                                <a
+                                <Link
                                     href={project.link}
                                     className="text-blue-500 hover:text-blue-700 font-semibold"
                                 >
                                     Voir le projet &rarr;
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     ))}

@@ -5,6 +5,7 @@ const Skills = () => {
     const skillsByCategory = {
         "Développement Web": [
             { name: 'JavaScript', icon: <FaJsSquare className="text-yellow-500" />, level: 'Avancé' },
+            { name: 'TypeScript', icon: <FaJsSquare className="text-blue-500" />, level: 'Débutant' },
             { name: 'React', icon: <FaReact className="text-blue-500" />, level: 'Avancé' },
             { name: 'Next.js', icon: <FaReact className="text-gray-800" />, level: 'Intermédiaire' },
             { name: 'Node.js', icon: <FaNodeJs className="text-green-500" />, level: 'Intermédiaire' },
@@ -41,7 +42,7 @@ const Skills = () => {
                 <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Compétences</h2>
                 {Object.entries(skillsByCategory).map(([category, skills], index) => (
                     <div key={index} className="mb-12">
-                        <h3 className="text-3xl font-semibold text-gray-700 mb-8">{category}</h3>
+                        <h3 className="text-3xl font-semibold text-gray-700 mb-8 border-sky-300 border-b-2 border-l-8 p-2">{category}</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
                             {skills.map((skill, idx) => (
                                 <div key={idx} className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl text-center">

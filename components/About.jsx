@@ -3,14 +3,12 @@ import { FaCode, FaBook, FaGamepad, FaChess } from 'react-icons/fa';
 import { IoIosFitness } from 'react-icons/io';
 
 import yannick from '../public/images/PerretYannick.jpeg';
-import '../styles/about.css';
 
 const About = () => {
     return (
         <section id="àpropos" className="py-20 bg-gray-100">
             <div className="container mx-auto px-6 py-16 relative">
                 <div className="glow-wrapper">
-                    {/* Contenu principal */}
                     <div className="content-box relative p-8 rounded-lg bg-gray-200">
                         <div className="flex flex-col md:flex-row items-start max-w-4xl mx-auto md:space-x-8 gap-16">
                             <div className="w-full md:w-1/3 mb-8 md:mb-0">
@@ -28,7 +26,7 @@ const About = () => {
                             <div className="w-full md:w-2/3">
                                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
                                     Bonjour ! Je m&apos;appelle&nbsp;
-                                    <span className="font-semibold">Perret Yannick</span>, un développeur web full-stack passionné avec plusieurs années d'expérience dans la création d'applications web modernes et réactives. J'adore explorer de nouvelles technologies et améliorer continuellement mes compétences pour offrir les meilleures solutions à mes clients.
+                                    <span className="font-semibold">Yannick Perret</span>, un développeur web full-stack passionné avec plusieurs années d&apos;expérience dans la création d'applications web modernes et réactives. J'adore explorer de nouvelles technologies et améliorer continuellement mes compétences pour offrir les meilleures solutions à mes clients.
                                 </p>
 
                                 <div className="flex flex-col md:flex-row md:space-x-8">

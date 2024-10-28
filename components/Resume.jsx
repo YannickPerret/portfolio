@@ -4,12 +4,11 @@ import React from 'react';
 
 const Resume = () => {
     const experiences = [
-
         {
             type: 'Formation',
             title: 'Diplôme Technicien ES en Développement Applications',
             company: 'Centre Professionnel du Nord Vaudois (CPNV)',
-            period: '2022 - 2024 (2 ans)',
+            period: '06.2022 - 07.2024 (2 ans)',
             description: "Formation diplômante en développement d'applications web et mobile au Centre Professionnel du Nord Vaudois.",
         },
         {

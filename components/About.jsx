@@ -1,5 +1,7 @@
 import Image from 'next/image';
-import { FaCode, FaBook, FaGamepad } from 'react-icons/fa';
+import { FaCode, FaBook, FaGamepad, FaChess } from 'react-icons/fa';
+import { IoIosFitness } from 'react-icons/io';
+
 import yannick from '../public/images/PerretYannick.jpeg';
 import '../styles/about.css';
 
@@ -44,6 +46,12 @@ const About = () => {
                                             <li className="flex items-center mb-2">
                                                 <FaGamepad className="mr-2 text-purple-500" /> Jeux Vidéo
                                             </li>
+                                            <li className={`flex items-center mb-2`}>
+                                                <FaChess className={`flex items-center mb-2 mr-2 text-yellow-500`} /> Échecs
+                                            </li>
+                                            <li className="flex items-center mb-2">
+                                                <IoIosFitness className="mr-2 text-red-500" /> Fitness &amp; Musculation
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -52,9 +60,11 @@ const About = () => {
                                             Jeux Actuels
                                         </h3>
                                         <ul className="list-disc list-inside text-gray-700">
+                                            <li>World of Warcraft</li>
                                             <li>Overwatch</li>
-                                            <li>The Legend of Zelda: Breath of the Wild</li>
                                             <li>Minecraft</li>
+                                            <li>Tft (Teamfight Tactics)</li>
+                                            <li>Call of duty Black Ops 6 </li>
                                         </ul>
                                     </div>
                                 </div>

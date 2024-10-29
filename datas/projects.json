@@ -9,11 +9,11 @@
       "sectors": ["SaaS", "Streaming", "Technologie"],
       "year": "2024",
       "languages": ["Next.js", "Tailwind CSS", "AdonisJS", "Redis", "MySQL", "FFmpeg", "Gstreamer", "SSE", "CronJob", "Stripe"],
-      "mainImage": "/images/projects/arcanastream.png",
+      "mainImage": "/images/projects/arcanastream.jpg",
       "images": [
-        { "src": "/images/projects/arcanastream-1.png", "alt": "Interface de gestion Arcana Stream" },
-        { "src": "/images/projects/arcanastream-2.png", "alt": "Diffusion en direct sur Arcana Stream" },
-        { "src": "/images/projects/arcanastream-3.png", "alt": "Intégration Stripe sur Arcana Stream" }
+        { "src": "/images/projects/arcanastream-1.jpg", "alt": "Interface de gestion Arcana Stream" },
+        { "src": "/images/projects/arcanastream-2.jpg", "alt": "Diffusion en direct sur Arcana Stream" },
+        { "src": "/images/projects/arcanastream-3.jpg", "alt": "Intégration Stripe sur Arcana Stream" }
       ],
       "approach": "L'approche du projet Arcana Stream était de créer une plateforme centralisée pour la diffusion multi-plateformes tout en offrant une interface utilisateur facile à utiliser. Nous avons mis en œuvre des technologies modernes pour assurer la performance et la scalabilité de la plateforme.",
       "url": "https://arcanastream.io"
@@ -27,11 +27,11 @@
       "sectors": ["Coworking", "Gestion", "Technologie"],
       "year": "2024",
       "languages": ["Next.js", "Tailwind CSS", "AdonisJS", "MySQL"],
-      "mainImage": "/images/projects/coworking.png",
+      "mainImage": "/images/projects/coworking.jpg",
       "images": [
-        { "src": "/images/projects/coworking-1.png", "alt": "Réservation de salle de coworking" },
-        { "src": "/images/projects/coworking-2.png", "alt": "Vue de l'interface utilisateur pour Coworking" },
-        { "src": "/images/projects/coworking-3.png", "alt": "Vue de l'interface utilisateur pour Coworking" }
+        { "src": "/images/projects/coworking-1.jpg", "alt": "Réservation de salle de coworking" },
+        { "src": "/images/projects/coworking-2.jpg", "alt": "Vue de l'interface utilisateur pour Coworking" },
+        { "src": "/images/projects/coworking-3.jpg", "alt": "Vue de l'interface utilisateur pour Coworking" }
       ],
       "approach": "Nous avons collaboré avec l'équipe de One-Conseils pour identifier les besoins des utilisateurs finaux et créer une interface intuitive permettant une gestion efficace des espaces de coworking.",
       "url": "https://coworking.oneconseils.ch"
@@ -45,11 +45,11 @@
       "sectors": ["Conseil", "Vitrine", "Web"],
       "year": "2023",
       "languages": ["Next.js", "Tailwind CSS", "AdonisJS", "MySQL"],
-      "mainImage": "/images/projects/oneconseils.png",
+      "mainImage": "/images/projects/oneconseils.jpg",
       "images": [
-        { "src": "/images/projects/oneconseils-1.png", "alt": "Page d'accueil One Conseils" },
-        { "src": "/images/projects/oneconseils-2.png", "alt": "Présentation des services sur le site One Conseils" },
-        { "src": "/images/projects/oneconseils-3.png", "alt": "Présentation des services sur le site One Conseils" }
+        { "src": "/images/projects/oneconseils-1.jpg", "alt": "Page d'accueil One Conseils" },
+        { "src": "/images/projects/oneconseils-2.jpg", "alt": "Présentation des services sur le site One Conseils" },
+        { "src": "/images/projects/oneconseils-3.jpg", "alt": "Présentation des services sur le site One Conseils" }
       ],
       "approach": "L'approche était de concevoir un site web simple mais professionnel, pour offrir aux clients potentiels une image claire des services proposés par One Conseils tout en optimisant l'expérience utilisateur.",
       "url": "https://oneconseils.ch"
@@ -78,10 +78,11 @@
       "sectors": ["E-commerce", "Santé", "Vente en ligne"],
       "year": "2023",
       "languages": ["Shopify", "Liquid", "JavaScript", "HTML5", "CSS3"],
-      "mainImage": "/images/projects/sekoya.png",
+      "mainImage": "/images/projects/sekoya.jpg",
       "images": [
-        { "src": "/images/sekoya-1.jpg", "alt": "Page produit de Sekoya" },
-        { "src": "/images/sekoya-2.jpg", "alt": "Panier d'achat sur Sekoya" }
+        { "src": "/images/projects/sekoya-1.jpg", "alt": "Page produit de Sekoya" },
+        { "src": "/images/projects/sekoya-2.jpg", "alt": "Panier d'achat sur Sekoya" },
+        { "src": "/images/projects/sekoya-3.jpg", "alt": "Panier d'achat sur Sekoya" }
       ],
       "approach": "Nous avons mis en œuvre une solution Shopify personnalisée pour Sekoya, permettant une gestion facile des produits et un parcours client fluide, tout en intégrant des fonctionnalités marketing avancées.",
       "url": "https://sekoya.swiss"

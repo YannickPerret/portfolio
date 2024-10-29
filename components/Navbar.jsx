@@ -21,8 +21,8 @@ const useIsMobile = () => {
     return isMobile;
 };
 
-const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
+const Navbar = ({isScroll}) => {
+    const [isScrolled, setIsScrolled] = useState(isScroll || false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isMobile = useIsMobile();
 

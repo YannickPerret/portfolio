@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
       >
       <Head>
         <title>Perret Yannick - Portfolio</title>
-        <meta name="description" content="Portfolio de [Votre Nom]" />
+        <meta name="description" content="Portfolio de Yannick Perret" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />

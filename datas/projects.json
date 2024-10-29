@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "slug": "arcana-stream",
+      "title": "Arcana Stream",
+      "subtitle": "Un SaaS permettant de diffuser des vidéos en direct.",
+      "description": "Arcana Stream est une plateforme qui permet aux utilisateurs de diffuser du contenu vidéo en direct sur plusieurs plateformes simultanément. Elle offre des fonctionnalités avancées telles que la gestion de l'infrastructure via des CronJobs, une intégration avec Stripe pour les paiements, ainsi que des outils de streaming performants comme FFmpeg et Gstreamer.",
+      "client": "Arcana Stream",
+      "sectors": ["SaaS", "Streaming", "Technologie"],
+      "year": "2024",
+      "languages": ["Next.js", "Tailwind CSS", "AdonisJS", "Redis", "MySQL", "FFmpeg", "Gstreamer", "SSE", "CronJob", "Stripe"],
+      "mainImage": "/images/projects/arcanastream.png",
+      "images": [
+        { "src": "/images/arcana-1.jpg", "alt": "Interface de gestion Arcana Stream" },
+        { "src": "/images/arcana-2.jpg", "alt": "Diffusion en direct sur Arcana Stream" },
+        { "src": "/images/arcana-3.jpg", "alt": "Intégration Stripe sur Arcana Stream" }
+      ],
+      "approach": "L'approche du projet Arcana Stream était de créer une plateforme centralisée pour la diffusion multi-plateformes tout en offrant une interface utilisateur facile à utiliser. Nous avons mis en œuvre des technologies modernes pour assurer la performance et la scalabilité de la plateforme.",
+      "url": "https://arcanastream.io"
+    },
+    {
+      "slug": "coworking",
+      "title": "Coworking",
+      "subtitle": "Gestion des espaces de coworking pour One-Conseils.",
+      "description": "Ce projet est une extension du système de gestion de One-Conseils, permettant de gérer leurs espaces de coworking. L'application inclut la réservation de salles, la gestion des ressources et une interface simplifiée pour les utilisateurs.",
+      "client": "One-Conseils",
+      "sectors": ["Coworking", "Gestion", "Technologie"],
+      "year": "2024",
+      "languages": ["Next.js", "Tailwind CSS", "AdonisJS", "MySQL"],
+      "mainImage": "/images/projects/coworking.png",
+      "images": [
+        { "src": "/images/coworking-1.jpg", "alt": "Réservation de salle de coworking" },
+        { "src": "/images/coworking-2.jpg", "alt": "Vue de l'interface utilisateur pour Coworking" }
+      ],
+      "approach": "Nous avons collaboré avec l'équipe de One-Conseils pour identifier les besoins des utilisateurs finaux et créer une interface intuitive permettant une gestion efficace des espaces de coworking.",
+      "url": "https://coworking.oneconseils.ch"
+    },
+    {
+      "slug": "one-conseils",
+      "title": "One Conseils",
+      "subtitle": "Site vitrine pour l'entreprise One Conseils.",
+      "description": "Le site web de One Conseils est une vitrine en ligne de leurs services de conseil. Il a été conçu pour refléter l'identité professionnelle de l'entreprise, avec une navigation claire et une mise en page moderne.",
+      "client": "One Conseils",
+      "sectors": ["Conseil", "Vitrine", "Web"],
+      "year": "2023",
+      "languages": ["Next.js", "Tailwind CSS", "AdonisJS", "MySQL"],
+      "mainImage": "/images/projects/oneconseils.png",
+      "images": [
+        { "src": "/images/oneconseils-1.jpg", "alt": "Page d'accueil One Conseils" },
+        { "src": "/images/oneconseils-2.jpg", "alt": "Présentation des services sur le site One Conseils" }
+      ],
+      "approach": "L'approche était de concevoir un site web simple mais professionnel, pour offrir aux clients potentiels une image claire des services proposés par One Conseils tout en optimisant l'expérience utilisateur.",
+      "url": "https://oneconseils.ch"
+    },
+    {
+      "slug": "invisiblecom",
+      "title": "InvisibleCom",
+      "subtitle": "Site vitrine pour une entreprise dans le domaine de la communication.",
+      "description": "InvisibleCom était un site vitrine créé pour une entreprise spécialisée dans la communication et le marketing. L'entreprise a depuis fermé, mais le projet représentait un défi de conception et d'identité visuelle.",
+      "client": "InvisibleCom",
+      "sectors": ["Communication", "Marketing", "Vitrine"],
+      "year": "2023",
+      "languages": ["HTML5", "CSS3", "JavaScript"],
+      "mainImage": "/images/projects/Invisible.jpeg",
+      "images": [
+        { "src": "/images/invisiblecom-1.jpg", "alt": "Présentation de la marque InvisibleCom" }
+      ],
+      "approach": "Pour InvisibleCom, l'objectif était de créer une présence en ligne percutante qui transmettrait efficacement l'expertise en communication de l'entreprise tout en se démarquant de la concurrence."
+    },
+    {
+      "slug": "sekoya",
+      "title": "Sekoya",
+      "subtitle": "E-commerce pour compléments alimentaires naturels.",
+      "description": "Sekoya est un site e-commerce pour une entreprise de compléments alimentaires naturels. Le site a été développé sur Shopify pour offrir une expérience de vente en ligne fluide et sécurisée.",
+      "client": "Sekoya SA",
+      "sectors": ["E-commerce", "Santé", "Vente en ligne"],
+      "year": "2023",
+      "languages": ["Shopify", "Liquid", "JavaScript", "HTML5", "CSS3"],
+      "mainImage": "/images/projects/sekoya.png",
+      "images": [
+        { "src": "/images/sekoya-1.jpg", "alt": "Page produit de Sekoya" },
+        { "src": "/images/sekoya-2.jpg", "alt": "Panier d'achat sur Sekoya" }
+      ],
+      "approach": "Nous avons mis en œuvre une solution Shopify personnalisée pour Sekoya, permettant une gestion facile des produits et un parcours client fluide, tout en intégrant des fonctionnalités marketing avancées.",
+      "url": "https://sekoya.swiss"
+    }
+  ]
+}

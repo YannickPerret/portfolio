@@ -1,55 +1,10 @@
 'use client';
 import Image from 'next/image';
 import Link from "next/link";
-import arcanastream from "@public/images/projects/arcanastream.png";
-import coworking from "@public/images/projects/coworking.png";
-import oneconseils from "@public/images/projects/oneconseils.png";
-import invisiblecom from "@public/images/projects/Invisible.jpeg";
-import sekoya from "@public/images/projects/sekoya.png";
+import projectsData from "@datas/projects.json";
 
 const Projects = () => {
-    const projects = [
-        {
-            title: 'Arcana Stream',
-            description: 'Un Saas permettant de diffuser des vidéos en direct.',
-            image: arcanastream,
-            link: 'https://arcanastream.io',
-            languages: ['Next.js', 'Tailwind CSS', 'AdonisJS', 'Redis', 'MySQL', 'FFmpeg', 'Gstreamer', 'SSE', 'CronJob', 'Stripe'],
-            slug: 'arcana-stream',
-        },
-        {
-            title: 'Coworking',
-            description: 'Une extension de système à One-Conseils pour gérer leurs espaces de coworking, notamment les réservations.',
-            image: coworking,
-            link: 'https://coworking.oneconseils.ch',
-            languages: ['Next.js', 'Tailwind CSS', 'AdonisJS', 'MySQL'],
-            slug: 'coworking',
-        },
-        {
-            title: 'One Conseils',
-            description: 'Un site vitrine pour l\'entreprise One Conseils.',
-            image: oneconseils,
-            link: 'https://oneconseils.ch',
-            languages: ['Next.js', 'Tailwind CSS', 'AdonisJS', 'MySQL'],
-            slug: 'one-conseils',
-        },
-        {
-            title: 'InvisibleCom',
-            description: 'Un site vitrine pour une entreprise dans le domaine de la communication et du marketing, malheureusement l\'entreprise a fermé.',
-            image: invisiblecom,
-            link: null,
-            languages: ['HTML5', 'CSS3', 'JavaScript'],
-            slug: 'invisiblecom',
-        },
-        {
-            title: 'Sekoya',
-            description: 'Un site e-commerce pour une entreprise dans le domaine de la santé, vente de compléments alimentaires naturels.',
-            image: sekoya,
-            link: 'https://sekoya.swiss',
-            languages: ['Shopify', 'Liquid', 'JavaScript', 'HTML5', 'CSS3'],
-            slug: 'sekoya',
-        },
-    ];
+    const projects = projectsData.projects;
 
     return (
         <section id="projets" className="py-20 bg-gray-100">
@@ -63,7 +18,7 @@ const Projects = () => {
                                 index === 0 ? "md:col-span-1 md:row-span-2" : ""
                             }`}>
                             <Image
-                                src={project.image}
+                                src={project.mainImage}
                                 alt={project.title}
                                 width={600}
                                 height={400}

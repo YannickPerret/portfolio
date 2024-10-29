@@ -4,6 +4,7 @@
       "@/*": ["./*"],
       "@components/*": ["./components/*"],
       "@public/*": ["./public/*"],
+      "@datas/*": ["./datas/*"],
     }
   }
 }

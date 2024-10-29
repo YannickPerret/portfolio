@@ -179,7 +179,7 @@ const Resume = () => {
                         return getDate(b) - getDate(a);
                     }).map((item, index) => (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-                            <div className="flex items-start space-x-4">
+                            <div className="flex items-start space-x-4 flex-col lg:flex-row">
                                 <div className={`${item.type === 'Formation' ? 'bg-red-300' : 'bg-teal-500'} text-white rounded-full w-28 h-8 flex items-center justify-center font-bold`}>
                                     {item.type === 'Formation' ? 'FORMATION' : 'EXPERIENCE'}
                                 </div>

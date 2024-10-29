@@ -166,7 +166,7 @@ const Resume = () => {
     return (
         <section id="monparcours" className="py-20 bg-gray-100">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Mon Parcours</h2>
+                <h2 className="text-4xl font-bold text-center text-sky-700 mb-12">Mon Parcours</h2>
                 <div className="space-y-12">
                     {experiences.sort((a, b) => {
                         // Custom sorting logic for ordering from most recent to oldest

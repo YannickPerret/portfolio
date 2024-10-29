@@ -42,7 +42,6 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Portfolio de Yannick Perret" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
         {children}
       </body>
     </html>

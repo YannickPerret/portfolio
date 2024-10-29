@@ -64,7 +64,7 @@ const Skills = () => {
     return (
         <section id="competences" className="py-20 bg-gray-100">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Compétences</h2>
+                <h2 className="text-4xl font-bold text-center text-sky-700 mb-12">Compétences</h2>
                 <div className="text-gray-600 mb-12">
                     <ul className={`list-inside text-gray-700 italic text-sm`}>
                         <li>Débutant : Déjà utilisé et peut faire fonctionné un système simple</li>

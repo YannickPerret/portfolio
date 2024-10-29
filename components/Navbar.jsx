@@ -21,7 +21,17 @@ const useIsMobile = () => {
     return isMobile;
 };
 
-const Navbar = ({isScroll}) => {
+// Tableau des éléments de navigation
+const navItems = [
+    { label: 'Accueil', path: '/', alt: 'Retourner à l\'accueil' },
+    { label: 'À Propos', path: '/#apropos', alt: 'En savoir plus sur moi' },
+    { label: 'Mon Parcours', path: '/#monparcours', alt: 'Découvrez mon parcours' },
+    { label: 'Projets', path: '/#projets', alt: 'Voir mes projets' },
+    { label: 'Compétences', path: '/#competences', alt: 'Découvrez mes compétences' },
+    { label: 'Contact', path: '/#contact', alt: 'Entrer en contact' },
+];
+
+const Navbar = ({ isScroll }) => {
     const [isScrolled, setIsScrolled] = useState(isScroll || false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isMobile = useIsMobile();
@@ -53,7 +63,7 @@ const Navbar = ({isScroll}) => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-500 ${
+            className={`fixed w-full z-50 transition-all duration-500 border-b border-black ${
                 isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
             }`}
         >
@@ -61,28 +71,30 @@ const Navbar = ({isScroll}) => {
                 <div
                     className={`text-2xl font-bold transition-all duration-500 font-[family-name:var(--font-monsier-regular)]  ${
                         isScrolled ? 'text-blue-600' : 'text-white'
-                    }`}>
+                    }`}
+                >
                     Yannick Perret
                 </div>
                 {isMobile ? (
-                    <button onClick={handleMenuToggle} className={`${isScrolled ? 'text-black':'text-white'}  focus:outline-none z-50`}>
+                    <button onClick={handleMenuToggle} className={`${isScrolled ? 'text-black' : 'text-white'} focus:outline-none z-50`}>
                         <div className={`w-8 h-1 bg-current my-1 transition-transform  ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
                         <div className={`w-8 h-1 bg-current my-1 ${isMenuOpen ? 'opacity-0' : ''}`} />
                         <div className={`w-8 h-1 bg-current my-1 transition-transform ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
                     </button>
                 ) : (
                     <ul className="flex space-x-6">
-                        {['Accueil', 'A Propos', 'Mon Parcours', 'Projets', 'Competences', 'Contact'].map((item, index) => (
+                        {navItems.map((item, index) => (
                             <li key={index}>
                                 <Link
-                                    href={`#${item.toLowerCase().replace(' ', '')}`}
+                                    href={item.path}
                                     className={`transition-all duration-500 ${
                                         isScrolled
                                             ? 'text-gray-700 hover:text-blue-500'
                                             : 'text-gray-200 hover:text-blue-300'
                                     }`}
+                                    alt={item.alt}
                                 >
-                                    {item}
+                                    {item.label}
                                 </Link>
                             </li>
                         ))}
@@ -93,14 +105,15 @@ const Navbar = ({isScroll}) => {
             {isMobile && isMenuOpen && (
                 <div className="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-40 transition-transform transform translate-x-0">
                     <ul className="flex flex-col p-6 space-y-6 mt-16">
-                        {['Accueil', 'A Propos', 'Mon Parcours', 'Projets', 'Competences', 'Contact'].map((item, index) => (
+                        {navItems.map((item, index) => (
                             <li key={index}>
                                 <Link
-                                    href={`#${item.toLowerCase().replace(' ', '')}`}
+                                    href={item.path}
                                     className="text-gray-700 hover:text-blue-500 text-lg font-semibold"
                                     onClick={handleMenuItemClick}
+                                    alt={item.alt}
                                 >
-                                    {item}
+                                    {item.label}
                                 </Link>
                             </li>
                         ))}

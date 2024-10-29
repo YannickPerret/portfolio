@@ -12,22 +12,28 @@ const Contact = () => {
             name: e.target.name.value,
             email: e.target.email.value,
             message: e.target.message.value,
+            honeypot: e.target.honeypot.value,
         };
 
-        const response = await fetch('/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
-
-        if (response.ok) {
-            setStatus('Merci pour votre message !');
-            e.target.reset();
-        } else {
-            setStatus('Une erreur est survenue. Veuillez réessayer.');
+        if (data.honeypot) {
+            setStatus('Spam détecté.');
+            return;
         }
+
+        const apiEndpoint = '/api/email';
+
+        fetch(apiEndpoint, {
+            method: 'POST',
+            body: JSON.stringify(data),
+        })
+            .then((res) => res.json())
+            .then((response) => {
+                setStatus('Merci pour votre message !');
+                e.target.reset();
+            })
+            .catch((err) => {
+                setStatus('Une erreur est survenue. Veuillez réessayer.');
+            });
     };
 
     return (
@@ -61,6 +67,14 @@ const Contact = () => {
                                 required
                                 className="w-full border border-gray-300 rounded-lg px-4 py-3 mt-2 h-32 focus:outline-none focus:ring-2 focus:ring-sky-500 bg-gray-50 text-gray-700"
                             ></textarea>
+                        </div>
+                        <div className="hidden">
+                            <input
+                                type="text"
+                                name="honeypot"
+                                tabIndex="-1"
+                                autoComplete="off"
+                            />
                         </div>
                         <button
                             type="submit"

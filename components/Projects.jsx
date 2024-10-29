@@ -62,7 +62,7 @@ const Projects = () => {
                                 alt={project.title}
                                 width={600}
                                 height={400}
-                                className={`w-full sm:h-[35rem] ${index === 0 ? 'md:h-[50rem]' : 'md:h-96'} object-top object-cover transition-transform duration-300 ease-in-out group-hover:scale-110`}
+                                className={`w-full h-[20rem] ${index === 0 ? 'md:h-[50rem]' : 'md:h-96'} object-top object-cover transition-transform duration-300 ease-in-out group-hover:scale-110`}
                             />
 
                             <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-between">

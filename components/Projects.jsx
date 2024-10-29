@@ -15,6 +15,7 @@ const Projects = () => {
             image: arcanastream,
             link: 'https://arcanastream.io',
             languages: ['Next.js', 'Tailwind CSS', 'AdonisJS', 'Redis', 'MySQL', 'FFmpeg', 'Gstreamer', 'SSE', 'CronJob', 'Stripe'],
+            slug: 'arcana-stream',
         },
         {
             title: 'Coworking',
@@ -22,6 +23,7 @@ const Projects = () => {
             image: coworking,
             link: 'https://coworking.oneconseils.ch',
             languages: ['Next.js', 'Tailwind CSS', 'AdonisJS', 'MySQL'],
+            slug: 'coworking',
         },
         {
             title: 'One Conseils',
@@ -29,6 +31,7 @@ const Projects = () => {
             image: oneconseils,
             link: 'https://oneconseils.ch',
             languages: ['Next.js', 'Tailwind CSS', 'AdonisJS', 'MySQL'],
+            slug: 'one-conseils',
         },
         {
             title: 'InvisibleCom',
@@ -36,6 +39,7 @@ const Projects = () => {
             image: invisiblecom,
             link: null,
             languages: ['HTML5', 'CSS3', 'JavaScript'],
+            slug: 'invisiblecom',
         },
         {
             title: 'Sekoya',
@@ -43,6 +47,7 @@ const Projects = () => {
             image: sekoya,
             link: 'https://sekoya.swiss',
             languages: ['Shopify', 'Liquid', 'JavaScript', 'HTML5', 'CSS3'],
+            slug: 'sekoya',
         },
     ];
 
@@ -82,18 +87,12 @@ const Projects = () => {
 
                                 </div>
 
-                                {project.link ? (
+
                                     <Link
-                                        href={project.link}
-                                        className="inline-block bg-sky-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-sky-400 transition-all duration-300"
-                                    >
+                                        href={`/projects/${project.slug}`}
+                                        className="inline-block bg-sky-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-sky-400 transition-all duration-300">
                                         Voir le projet &rarr;
                                     </Link>
-                                ): (
-                                    <span className="bg-gray-500 text-white px-4 py-2 rounded-full font-semibold cursor-not-allowed">
-                                        Non disponible
-                                    </span>
-                                )}
                             </div>
                         </div>
                     ))}
